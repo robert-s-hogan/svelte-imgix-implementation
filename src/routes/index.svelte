@@ -3,7 +3,7 @@
 </script>
 
 <script>
-	import logo from '$lib/header/svelte-logo.svg';
+	import Header from '$lib/header/Header.svelte'
 	import 'lazysizes';
 </script>
 
@@ -12,12 +12,7 @@
 </svelte:head>
 
 <section>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a>
-	</div>
-	<h1>IMGIX configuration</h1>
+	<Header />
 	<div class="grid">
 		<div class="intro">
 			<div class="picture">
@@ -147,18 +142,13 @@
 				<figure>
 					<img
 						data-srcset="https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=640 1280w,
-								https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=512 1024w,
-								https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=374 768w,
-								https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=320 640w,
-								https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=240 480w,
-								https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=160 320w"
-						srcset="https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&px=16&blur=200&fm=webp&w=640 1280w,
-								https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&px=16&blur=200&fm=webp&w=512 1024w,
-								https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&px=16&blur=200&fm=webp&w=374 768w,
-								https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&px=16&blur=200&fm=webp&w=320 640w,
-								https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&px=16&blur=200&fm=webp&w=240 480w,
-								https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&px=16&blur=200&fm=webp&w=160 320w"
-						sizes="50vw"
+							https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=512 1024w,
+							https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=374 768w,
+							https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=320 640w,
+							https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=240 480w,
+							https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=160 320w"
+						src="https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&px=16&blur=200&fm=webp&w=320 640w"
+						data-sizes="50vw"
 						class="lazyload"
 						alt=""
 					>
