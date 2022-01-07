@@ -66,13 +66,18 @@
 			<div class="srcset">
 				<h2>Img SrcSet</h2>
 				<figure>
-					<img
+					<!-- <img
 						srcset="https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=640 1280w,
 								https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=512 1024w,
 								https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=374 768w,
 								https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=320 640w,
 								https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=240 480w,
 								https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=160 320w"
+						sizes="50vw"
+						alt=""
+					> -->
+					<img
+						srcset="https://vintagewineestates.imgix.net//static/images/2017/brands/gw/gw-wine-and-cheese-750x550.jpg"
 						sizes="50vw"
 						alt=""
 					>
@@ -82,7 +87,7 @@
 		</div>
 		<div class="spacer"></div>
 		<div class="spacer"></div>
-		<div class="lazyload">
+		<div class="lazy">
 			<div class="picture">
 				<h2>Lazyload Picture Element</h2>
 				<figure>
@@ -136,7 +141,7 @@
 				</figure>
 			</div>
 		</div>
-		<div class="lazyload">
+		<div class="lazy">
 			<div class="srcset">
 				<h2>Lazyload Img SrcSet</h2>
 				<figure>
@@ -175,7 +180,7 @@
 	figure {
 		margin: .5rem;
 	}
-	img, .intro, .lazyload {
+	img, .intro, .lazy {
 		width: 100%;
 	}
 	figcaption {
@@ -199,4 +204,24 @@
 		height: 2em;
 		object-fit: contain;
 	}
+	@keyframes placeHolderShimmer{
+    0%{
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
+
+.lazyload {
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    height: 96px;
+    position: relative;
+}
 </style>
