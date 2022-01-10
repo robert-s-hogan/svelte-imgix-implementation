@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Lazyload</title>
 </svelte:head>
 
 <section>
