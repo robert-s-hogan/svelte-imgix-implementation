@@ -18,7 +18,7 @@
 	<div class="grid">
 		<div class="intro">
 			<div class="picture">
-				<h2>Example #1</h2>
+				<h2>Img srcset Example #1</h2>
 				<figure class="skeleton">
 						<img
 							srcset="https://vintagewineestates.imgix.net/common/images/banners/CPDawn2.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=640 1280w,
@@ -30,13 +30,13 @@
 							sizes="50vw"
 							alt=""
 						>
-					<figcaption>above the fold img</figcaption>
+					<figcaption>Picture element above the fold without lazyload</figcaption>
 				</figure>
 			</div>
 		</div>
 		<div class="intro">
 			<div class="srcset">
-				<h2>Example #2</h2>
+				<h2>Img SrcSet Example #2</h2>
 				<figure class="skeleton">
 					<img
 						srcset="https://brcohn.imgix.net/static/images/2019/03/BRCohnWinery_049_amphitheater.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=640 1280w,
@@ -48,7 +48,7 @@
 						sizes="50vw"
 						alt=""
 					>
-					<figcaption>above the fold img</figcaption>
+					<figcaption>Img srcset above the fold without lazyload</figcaption>
 				</figure>
 			</div>
 		</div>
@@ -56,7 +56,7 @@
 		<div class="spacer"></div>
 		<div class="lazy">
 			<div class="picture">
-				<h2>Example #1</h2>
+				<h2>Lazyload Img SrcSet Lazyloaded Example #1</h2>
 				<figure class="skeleton">
 					<img
 					srcset="https://vintagewineestates.imgix.net/common/images/banners/CPDawn2.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=640 1280w,
@@ -67,16 +67,17 @@
 						https://vintagewineestates.imgix.net/common/images/banners/CPDawn2.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=160 320w"
 					src="https://vintagewineestates.imgix.net/common/images/banners/CPDawn2.jpg?auto=compress,format,enhance&fit=crop&w=320 640w"
 					sizes="50vw"
+					class="lazyload"
 					alt=""
 				>
 
-				<figcaption>Skeleton CSS animation with normal image loading</figcaption>
-			</figure>
+					<figcaption>Img srcset lazyloaded</figcaption>
+				</figure>
 			</div>
 		</div>
 		<div class="lazy">
 			<div class="srcset">
-				<h2>Example #2</h2>
+				<h2>Lazyload Img SrcSet Lazyloaded Example #2</h2>
 				<figure class="skeleton">
 					<img
 						srcset="https://brcohn.imgix.net/static/images/2019/03/BRCohnWinery_049_amphitheater.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=640 1280w,
@@ -87,9 +88,10 @@
 							https://brcohn.imgix.net/static/images/2019/03/BRCohnWinery_049_amphitheater.jpg?auto=compress,format,enhance&fit=crop&crop=entropy&w=160 320w"
 						src="https://brcohn.imgix.net/static/images/2019/03/BRCohnWinery_049_amphitheater.jpg?auto=compress,format,enhance&fit=crop&w=320 640w"
 						sizes="50vw"
+						class="lazyload"
 						alt=""
 					>
-					<figcaption>Skeleton CSS animation with normal image loading</figcaption>
+					<figcaption>Img srcset lazyloaded</figcaption>
 				</figure>
 			</div>
 		</div>
