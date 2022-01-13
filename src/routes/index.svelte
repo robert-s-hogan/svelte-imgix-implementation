@@ -5,8 +5,6 @@
 <script>
 	import Header from '$lib/header/Header.svelte'
 	import 'lazysizes';
-	import Skeleton from 'svelte-skeleton'
-
 </script>
 
 <svelte:head>
